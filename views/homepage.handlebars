@@ -13,6 +13,17 @@
                 <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
             </div>
         </article>
+
     </li>
     {{/each}}
 </ol>
+
+            <ol class="post-list">
+                {{#each posts as |post|}}
+                <li>
+                    {{> post-info post }}
+                </li>
+                {{/each}}
+            </ol>
+
+{{!-- {{> post-info post }} --}}
